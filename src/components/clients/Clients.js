@@ -66,7 +66,7 @@ class Clients extends Component {
                   <td>{client.email}</td>
                   <td>${parseFloat(client.balance).toFixed(2)}</td>
                   <td>
-                    <Link to={`/clients/${client.id}`} className="btn btn-secondary btn-sm">
+                    <Link to={`/client/${client.id}`} className="btn btn-secondary btn-sm">
                       <i className=" fas fa-arrow-circle-right" /> Details
                     </Link>
                   </td>
