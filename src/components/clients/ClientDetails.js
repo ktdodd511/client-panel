@@ -55,7 +55,7 @@ class ClientDetails extends Component {
               value={balanceUpdateAmount}
               onChange={this.onChange}
             />
-            <div class="input-group-append">
+            <div className="input-group-append">
               <input
                 type="submit"
                 value="Update"
