@@ -77,7 +77,7 @@ class AddClient extends Component {
                 <input
                   type="text"
                   className="form-control"
-                  name="Company"
+                  name="company"
                   minLength="2"
                   onChange={this.onChange}
                   value={this.state.company}
