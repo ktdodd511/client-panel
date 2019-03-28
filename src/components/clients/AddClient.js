@@ -9,6 +9,7 @@ class AddClient extends Component {
   state = {
     firstName: '',
     lastName: '',
+    company: '',
     email: '',
     phone: '',
     balance: ''
@@ -69,6 +70,17 @@ class AddClient extends Component {
                   required
                   onChange={this.onChange}
                   value={this.state.lastName}
+                  />
+              </div>
+              <div className="form-group">
+                <label htmlFor="company">Company</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="Company"
+                  minLength="2"
+                  onChange={this.onChange}
+                  value={this.state.company}
                   />
               </div>
               <div className="form-group">

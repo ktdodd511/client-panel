@@ -12,6 +12,7 @@ class EditClient extends Component {
     // create refs
     this.firstNameInput = React.createRef();
     this.lastNameInput = React.createRef();
+    this.companyInput = React.createRef();
     this.emailInput = React.createRef();
     this.phoneInput = React.createRef();
     this.balanceInput = React.createRef();
@@ -27,6 +28,7 @@ class EditClient extends Component {
     const updClient = {
       firstName: this.firstNameInput.current.value,
       lastName: this.lastNameInput.current.value,
+      company: this.companyInput.current.value,
       email: this.emailInput.current.value,
       phone: this.phoneInput.current.value,
       balance: this.balanceInput.current.value === '' ? 0 : this.balanceInput.current.value
@@ -78,6 +80,19 @@ class EditClient extends Component {
                     ref={this.lastNameInput}
                     onChange={this.onChange}
                     defaultValue={client.lastName}
+                    />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="company">Company</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="company"
+                    minLength="2"
+                    required
+                    ref={this.companyInput}
+                    onChange={this.onChange}
+                    defaultValue={client.company}
                     />
                 </div>
                 <div className="form-group">

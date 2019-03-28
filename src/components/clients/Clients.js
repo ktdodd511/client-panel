@@ -42,7 +42,7 @@ class Clients extends Component {
             </div>
             <div className="col-md-6">
               <h5 className="test-right text-secondary">
-                Total Owed{' '}
+                Total Owed:{' '}
                 <span className="text-primary">
                   ${parseFloat(totalOwed).toFixed(2)}
                 </span>
@@ -54,6 +54,7 @@ class Clients extends Component {
             <thead className="thead-inverse">
               <tr>
                 <th>Name</th>
+                <th>Company</th>
                 <th>Email</th>
                 <th>Balance</th>
                 <th />
@@ -63,6 +64,7 @@ class Clients extends Component {
               {clients.map(client => (
                 <tr key={client.id}>
                   <td>{client.firstName} {client.lastName}</td>
+                  <td>{client.company}</td>
                   <td>{client.email}</td>
                   <td>${parseFloat(client.balance).toFixed(2)}</td>
                   <td>

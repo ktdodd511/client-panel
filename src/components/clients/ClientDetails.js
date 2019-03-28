@@ -122,6 +122,7 @@ class ClientDetails extends Component {
 
               <hr />
               <ul className="list-group">
+                <li className="list-group-item">Contact Company: {client.company}</li>
                 <li className="list-group-item">Contact Email: {client.email}</li>
                 <li className="list-group-item">Contact Phone: {client.phone}</li>
               </ul>
